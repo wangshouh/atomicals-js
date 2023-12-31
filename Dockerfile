@@ -24,4 +24,4 @@ COPY --from=build /app/.env /app/.env
 COPY --from=build /app/dist /app/dist
 COPY --from=build /app/node_modules /app/node_modules
 
-ENTRYPOINT ["node", "dist/cli.js"]
+ENTRYPOINT ["node", "dist/cli.js", "mint-dft", "quark"]
